@@ -16,3 +16,5 @@ Multilayer perceptron R-square used in keras package:99.995988%
 Random forest R-square: 99.9950%
 
 The predictions are close to 1 because of the nature of the data. We have interest rates, which can generally be prediction based on data from previous days. Still, we can see our model beats random forest and this is despite the fact that it was still converging - meaning that it would likely improve prediction if we are to train it for longer.
+
+Note, in such a prediction it would make more sense to difference the data and make predictions based on that. Then R-squared would not be so close to 1 and we would get slightly more realistic numbers (though still similar performance). This is the work that might be done in the future.
